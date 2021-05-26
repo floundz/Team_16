@@ -154,7 +154,13 @@ class ProfileFragment : Fragment(R.layout.fragment_profile) {
 
     fun changePassword()
     {
+        val dialog = ChangePasswordDialogFragment()
 
+        val fm = this@ProfileFragment.fragmentManager
+
+        if(fm != null) {
+            dialog.show(fm, "changePassword")
+        }
     }
 
     fun validateTitleSetting(titleSetting: String) : Boolean {
