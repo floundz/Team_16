@@ -67,7 +67,7 @@ class MyApplication : Application() {
             if (language != currentLanguage) {
                 Log.d("LanguageChanged", language)
                 currentLanguage = language
-                updateResources(activity.applicationContext)
+                updateResources(activity)
                 activity.finish()
                 activity.startActivity(activity.intent)
             }

@@ -19,56 +19,69 @@
         android:textSize="18sp"
         app:backgroundTint="#ffffff"
         app:layout_constraintBottom_toTopOf="@+id/btnRegister"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnRegister"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="10dp"
-        android:layout_marginBottom="60dp"
+        android:layout_marginBottom="56dp"
         android:background="@drawable/custom_button"
         android:text="@string/register"
         android:textColor="#168AAD"
         android:textSize="18sp"
         app:backgroundTint="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/tvStartScreenEasyTracker"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="40dp"
         android:fontFamily="sans-serif-light"
         android:gravity="center_horizontal"
         android:text="@string/app_name"
         android:textColor="#ffffff"
         android:textSize="40sp"
-        tools:layout_editor_absoluteX="9dp"
-        tools:layout_editor_absoluteY="40dp" />
+        app:layout_constraintBottom_toTopOf="@+id/tvStartScreenDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spLanguage" />
 
     <TextView
         android:id="@+id/tvStartScreenDescription"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="10dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginBottom="168dp"
         android:fontFamily="sans-serif-light"
         android:justificationMode="inter_word"
         android:lineSpacingExtra="4sp"
         android:text="@string/welcome_text"
         android:textColor="#ffffff"
         android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@+id/tvStartScreenEasyTracker"
-        tools:layout_editor_absoluteX="10dp" />
+        app:layout_constraintBottom_toTopOf="@+id/btnLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Spinner
         android:id="@+id/spLanguage"
-        android:layout_width="74dp"
-        android:layout_height="27dp"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
         android:layout_marginTop="4dp"
+        android:textColor="#ffffff"
+        app:backgroundTint="#ffffff"
         app:layout_constraintEnd_toEndOf="@+id/tvStartScreenEasyTracker"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

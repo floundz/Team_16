@@ -5,6 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.TextView
+import androidx.core.view.setPadding
 
 
 /**
@@ -33,6 +34,7 @@ class MapSpinnerAdapter (
         super.getView(position, convertView, parent)
         val label = TextView(context)
         label.text = map[keys[position]]!!
+        label.setPadding(30)
         return label
     }
 
@@ -43,6 +45,7 @@ class MapSpinnerAdapter (
         super.getDropDownView(position, convertView, parent!!)
         val label = TextView(context)
         label.text = map[keys[position]]!!
+        label.setPadding(50)
         return label
     }
 
